@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: url('../../assets/bg.png')
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.lawyer-search-container {
+    width: 100%;
+    margin-top: 20px;
+    /* margin-left: 70px; */
+    padding: 20px;
+    background-color: #000000bd;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: 2px solid blac;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    align-items: flex-end;
+}
+
+.search-form label {
+    margin-right: 10px;
+    color: #666;
+    font-size: 16px;
+}
+
+.search-form select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.search-form input {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 12.5px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-size: 16px;
+    margin-bottom: 22px;
+    margin-left: 40px;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+.search-results {
+    margin-top: 20px;
+}
+
+.lawyer-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.lawyer-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.lawyer-card p {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.read-more-link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.lawyer-details {
+    display: none;
+    margin-top: 10px;
+    color: #333;
+}
+
+.Typ{
+    font-size: large;
+}
+

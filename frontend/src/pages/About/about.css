@@ -1,0 +1,40 @@
+.about-us-container {
+    max-width: 800px;
+    /* margin: 50px auto; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 325px;
+    padding: 100px;
+    padding-top: 50px;
+    background-color:#000000bd;
+    border: 1px solid black;
+    color: white;
+    text-decoration: solid;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us-content {
+    text-align: justify;
+  }
+  
+  h1, h2 {
+    color: rgb(255, 255, 255);
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  ol {
+    margin-bottom: 15px;
+    
+  }
+  .hello {
+    color: white;
+
+  }
+  
+  
+  /* Add additional styling as needed for your specific design preferences */
+  

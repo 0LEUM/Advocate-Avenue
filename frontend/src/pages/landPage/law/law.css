@@ -1,0 +1,71 @@
+.law{
+    margin: 0px 120px ;
+    margin-top: 120px;
+}
+
+.law-text{
+    color: #FFF;
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 50px;
+    font-family: sans-serif;
+}
+
+.law-explore{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: fit-content;
+    margin-top: 70px;
+    padding: 5px 8px;
+    padding-left: 30px;
+    border-radius: 60px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.law-explore p{
+    /* color: #292929; */
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.law-dot-play{
+    display: flex;
+    justify-content: space-between;
+}
+
+.law-dots{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.law-dot{
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+    background: #FFF;
+    border-radius: 500px;
+    cursor: pointer;
+}
+
+.law-dot.orange{
+    background: orangered;   
+}
+
+.law-play{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 3px;
+}
+
+.law-play p{
+    color: #FFF;
+    font-size: 19px;
+}

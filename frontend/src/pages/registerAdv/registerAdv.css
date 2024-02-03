@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.main{
+    padding-top: 20px;
+    padding-left: 30%;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.wrapper{
+    width: 600px;
+    background: rgb(4, 4, 4);
+    color:#fff;  
+    border-radius: 10px;
+    padding: 20px 40px; 
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin: 40px 0;
+    display: flex;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2); 
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box2{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin: 15px 0 0 0;
+    display: flex;
+}
+
+.input-box4{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin: 15px 0 0 0;
+    display: flex;    
+    margin-top: 40px;
+}
+
+.input-box2 input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2); 
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box4 input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2); 
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box2 input::placeholder{
+    color: #fff;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box4 input::placeholder{
+    color: #fff;
+}
+
+.input-box3{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin: 55px 0 40px 0;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 285px;
+    top: 100%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.input-box2 .icon{
+    position: absolute;
+    right: 285px;
+    top: 100%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.input-box .icon2{
+    position: absolute;
+    right: 20px;
+    top: 100%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.input-box .icon3{
+    position: absolute;
+    right: 20px;
+    top: 105%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.input-box2 .icon3{
+    position: absolute;
+    right: 20px;
+    top: 105%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+
+.wrapper .Terms-condi{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.Terms-condi label input {
+    accent-color: #fff;
+    margin-right: 4px;
+}
+
+.Terms-condi a {
+    accent-color: #fff;
+    text-decoration: none;
+}
+
+.Terms-condi label a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .News{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.News label input {
+    accent-color: #fff;
+    margin-right: 4px;
+}
+
+.News a {
+    accent-color: #fff;
+    text-decoration: none;
+}
+
+.wrapper select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2); 
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 45px 15px 20px;
+}
+
+option {
+    background-color: #000;
+    color: #fff; 
+}
+
+.button-adv{
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, 0); 
+    outline: none;
+    border-radius: 40px;
+    font-size: 18px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    cursor: pointer;
+}
+
+.Log{
+    padding-top: 15px;
+    font-size: 14.5px;
+    text-align: center;   
+}
+
+.Log p a {
+    text-decoration: none;
+    font-weight: 600;
+ }
+
+ .Log p a:hover {
+    text-decoration: underline;
+ }
