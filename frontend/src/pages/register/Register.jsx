@@ -22,14 +22,18 @@ const Register = () => {
         // console.log(e.target.name);
         setForm({
             ...form,
-            [e.target.name] : e.target.value
+            [e.target.name] : e.target.value,
+            [e.target.password] : e.target.value,
+            [e.target.firstName] : e.target.value,
+            [e.target.lastName] : e.target.value,
+            [e.target.phoneNumber] : e.target.value,
         })
         console.log(form);
     }
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:8080/Advocate-Avenue',{
+        const response = await fetch('http://localhost:8000/Advocate-Avenue',{
             method:'POST',
             body:JSON.stringify(form),
             headers:{
@@ -48,7 +52,7 @@ const Register = () => {
     }
 
     const getUsers = async () => {
-        const response =await fetch('http://localhost:8080/Advocate-Avenue',{
+        const response =await fetch('http://localhost:8000/Advocate-Avenue',{
             method:'GET',
         })
         const data = await response.json();
@@ -74,23 +78,23 @@ const Register = () => {
                     </div>
 
                     <div className="input-box5">
-                        <input type="text" placeholder='Password' name='pass' onChange={handleForm} required />
+                        <input type="text" placeholder='Password' name='password' onChange={handleForm} required />
                         <RiLockPasswordFill className ='icon'/>
                         
                     </div>
 
                     <div className="input-box5">
-                        <input type="text" placeholder='First Name' name='fname' onChange={handleForm} required />
+                        <input type="text" placeholder='First Name' name='firstName' onChange={handleForm} required />
                         <FaUserAlt className ='icon'/>
                     </div>
 
                     <div className="input-box5">
-                        <input type="text" placeholder='Last Name' name='lname' onChange={handleForm} required />
+                        <input type="text" placeholder='Last Name' name='lastName' onChange={handleForm} required />
                         <FaUserAlt className ='icon'/>
                     </div>
 
                     <div className="input-box5">
-                        <input type="text" placeholder='Phone Number' name='num' onChange={handleForm} required />
+                        <input type="text" placeholder='Phone Number' name='phoneNumber' onChange={handleForm} required />
                         <FaPhone className ='icon'/>
                     </div>
 

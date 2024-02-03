@@ -2,12 +2,16 @@
 import dotenv from "dotenv"
 import connectDB from "./database/index.js";
 import { app } from "./app.js";
+import { User } from "./models/user.models.js";
+import { Advocate } from "./models/advocate.models.js";
+
 
 // const app = express()
 
 dotenv.config({
     path: './env'
 })
+
 
 
 
@@ -23,4 +27,48 @@ connectDB()
 })
 .catch((error) => {
     console.log("MongoDB connenction failed !!!", error);
+})
+
+app.post('/Advocate-Avenue',async (req,res)=>{
+
+    let user = new User()
+    user.email = req.body.email;
+    user.password = req.body.password;
+    user.firstName = req.body.firstName;
+    user.lastName = req.body.lastName;
+    user.phoneNumber = req.body.phoneNumber
+
+    const doc = await user.save();
+
+    console.log(doc)
+    res.json(doc)
+})
+
+app.get('/Advocate-Avenue',async (req,res)=>{
+    const docs = await User.find({})
+    res.json(docs)
+})
+
+app.post('/Advocate-Avenue',async (req,res)=>{
+    let advocate = new Advocate()
+    advocate.email = req.body.email;
+    advocate.phoneNumber = req.body.phoneNumber;
+    advocate.password = req.body.password
+    advocate.firstName = req.body.firstName;
+    advocate.lastName = req.body.lastName;
+    advocate.universityName = req.body.universityName;
+    advocate.regNo = req.body.regNo;
+    advocate.dateOfBirth = req.body.dateOfBirth;
+    advocate.practicingState = req.body.practicingState;
+    advocate.district = req.body.district;
+
+    const doc = await Advocate.save();
+
+    console.log(doc)
+    res.json(doc)
+})
+
+app.get('/Advocate-Avenue',async (req,res)=>{
+    const docs = await Advocate.find({})
+    res.json(docs)
 })

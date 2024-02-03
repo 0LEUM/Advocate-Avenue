@@ -1,7 +1,7 @@
 import mongoose, { Schema } from "mongoose";
 import bcrypt from "bcrypt";
 
-const advocateSchema = Schema({
+const advocateSchema = new Schema({
     email: {
         type: String,
         required: true,
@@ -68,7 +68,7 @@ const advocateSchema = Schema({
 advocateSchema.pre("save", async function (next){
     if(!this.isModified("password")) return next();
 
-    this.password = await bcrypt.hash("this.password", 10)
+    this.password = bcrypt.hash(this.password, 10)
     next();
 })
 
