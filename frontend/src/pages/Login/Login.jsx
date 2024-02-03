@@ -11,7 +11,7 @@ import { useState } from 'react';
 
 const Login = () => {
     const [form, setForm] = useState({email: '', password: ''});
-    const [users, setUsers] = useState([]);
+    // const [users, setUsers] = useState([]);
 
     const handleForm = (e) => {
     // console.log(e.target.name);
