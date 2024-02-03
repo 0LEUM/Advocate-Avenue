@@ -19,7 +19,7 @@ import Footer from '../../components/Footer/Footer'
 const Register = () => {
 
     const [form, setForm] = useState({});
-    const [users, setUsers] = useState([]);
+    const [advocates, setAdvocates] = useState([]);
 
     const handleForm = (e) => {
         // console.log(e.target.name);
@@ -60,16 +60,16 @@ const Register = () => {
         }
     }
 
-    const getAdvocate = async () => {
+    const getAdvocates = async () => {
         const response =await fetch('http://localhost:8000/Advocate-Avenue',{
             method:'GET',
         })
         const data = await response.json();
-        setUsers(data);
+        setAdvocates(data);
     }
 
     useEffect(()=>{
-        getAdvocate();
+        getAdvocates();
     },[])
   return (
     <>
@@ -106,11 +106,11 @@ const Register = () => {
                     </div>
 
                     <div className="input-box">
-                        <input type="text" name='UniversityName' placeholder='University Name' onChange={handleForm} required />
+                        <input type="text" name='universityName' placeholder='University Name' onChange={handleForm} required />
                         <FaUniversity className ='icon3'/>
                     </div>
             
-                    <div>
+                    {/* <div>
                         <select id="states">
                             <option selected>Bar Council of ______</option>
                             <option value="1">Bar Council of Andra Pradesh</option>
@@ -123,7 +123,7 @@ const Register = () => {
                             <option value="Kerala">Kerala</option>
                             <option value="Sikkim">Sikkim</option>
                         </select>
-                    </div>
+                    </div> */}
 
                     <div className="input-box2">   
 

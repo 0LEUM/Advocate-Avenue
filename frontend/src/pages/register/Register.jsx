@@ -33,7 +33,7 @@ const Register = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:8000/Advocate-Avenue',{
+        const response = await fetch('http://localhost:8000/User-Avenue',{
             method:'POST',
             body:JSON.stringify(form),
             headers:{
@@ -52,7 +52,7 @@ const Register = () => {
     }
 
     const getUsers = async () => {
-        const response =await fetch('http://localhost:8000/Advocate-Avenue',{
+        const response =await fetch('http://localhost:8000/User-Avenue',{
             method:'GET',
         })
         const data = await response.json();

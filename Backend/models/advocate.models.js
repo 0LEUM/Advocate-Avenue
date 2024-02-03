@@ -18,6 +18,7 @@ const advocateSchema = new Schema({
     password: {
         type: String,
         required: true,
+        trim: true,
     },
     firstName: {
         type: String,
@@ -35,12 +36,12 @@ const advocateSchema = new Schema({
         required: true,
         trim: true,
     },
-    barCouncil: {
+    /*barCouncil: {
         type: String,
         required: true,
         trim: true,
         // enum: [''],
-    },
+    },*/
     regNo: {
         type: String,
         required: true,
@@ -48,7 +49,7 @@ const advocateSchema = new Schema({
         trim: true,
     },
     dateOfBirth: {
-        type: Date,
+        type: String,
         required: true,
         trim: true,
     },
@@ -69,7 +70,7 @@ advocateSchema.pre("save", async function (next){
     if(!this.isModified("password")) return next();
 
     try {
-        this.password = bcrypt.hash(this.password, 10)
+        this.password = await bcrypt.hash(this.password, 10)
         next();
       } catch (error) {
         throw next(error)

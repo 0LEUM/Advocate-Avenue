@@ -4,6 +4,7 @@ import connectDB from "./database/index.js";
 import { app } from "./app.js";
 import { User } from "./models/user.models.js";
 import { Advocate } from "./models/advocate.models.js";
+import { log } from "console";
 
 
 // const app = express()
@@ -29,7 +30,7 @@ connectDB()
     console.log("MongoDB connenction failed !!!", error);
 })
 
-app.post('/Advocate-Avenue',async (req,res)=>{
+app.post('/User-Avenue',async (req,res)=>{
 
     let user = new User()
     user.email = req.body.email;
@@ -44,12 +45,13 @@ app.post('/Advocate-Avenue',async (req,res)=>{
     res.json(doc)
 })
 
-app.get('/Advocate-Avenue',async (req,res)=>{
+app.get('/User-Avenue',async (req,res)=>{
     const docs = await User.find({})
     res.json(docs)
 })
 
 app.post('/Advocate-Avenue',async (req,res)=>{
+    try{
     let advocate = new Advocate()
     advocate.email = req.body.email;
     advocate.phoneNumber = req.body.phoneNumber;
@@ -62,10 +64,13 @@ app.post('/Advocate-Avenue',async (req,res)=>{
     advocate.practicingState = req.body.practicingState;
     advocate.district = req.body.district;
 
-    const doc = await Advocate.save();
+    const doc = await advocate.save();
 
     console.log(doc)
     res.json(doc)
+    }catch(err){
+        console.log(err)
+    }
 })
 
 app.get('/Advocate-Avenue',async (req,res)=>{
