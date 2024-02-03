@@ -68,8 +68,13 @@ const advocateSchema = new Schema({
 advocateSchema.pre("save", async function (next){
     if(!this.isModified("password")) return next();
 
-    this.password = bcrypt.hash(this.password, 10)
-    next();
+    try {
+        this.password = bcrypt.hash(this.password, 10)
+        next();
+      } catch (error) {
+        throw next(error)
+    }
+
 })
 
 
