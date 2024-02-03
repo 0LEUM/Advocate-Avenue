@@ -65,9 +65,8 @@ const Top = () => {
                     <img src={l2} alt="image" className="card__img"/>
 
                     <div className="card__data">
-                        <span className="card__description">Breaking Bad / Better Call Saul</span>
-                        <h2 className="card__title">Saul Goodman 
-                        </h2>
+                        <span className="card__description">Suits</span>
+                        <h2 className="card__title">Mike Ross</h2>
                         {/* <span className="card__description">⭐ 4.8</span>
                         <a href="#" className="card__button">Read More</a> */}
                     </div>
@@ -77,8 +76,8 @@ const Top = () => {
                     <img src={l3} alt="image" className="card__img"/>
 
                     <div className="card__data">
-                        <span className="card__description">Suits</span>
-                        <h2 className="card__title">Mike Ross</h2>
+                        <span className="card__description">Breaking Bad / Better Call Saul</span>
+                        <h2 className="card__title">Saul Goodman </h2>
                         {/* <span className="card__description">⭐ 4.8</span>
                         <a href="#" className="card__button">Read More</a> */}
                     </div>
