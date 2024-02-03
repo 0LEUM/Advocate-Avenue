@@ -41,7 +41,7 @@ body {
 
 .main-top {
   border-top: 15px solid rgb(50, 50, 50);
-    margin-top: 20px;
+  margin-top: 20px;
   }
 
 img {
@@ -58,6 +58,7 @@ img {
   padding-block: 5rem;
   background: #000000bd;
   margin-left: 0%;
+  margin-right: 0%;
 }
 
 .container h1{
@@ -79,7 +80,7 @@ img {
 }
 
 .card__img {
-  width: 328px;
+  width: 400px;
   height: 350px;
   border-radius: 1.5rem;
 }

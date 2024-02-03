@@ -12,10 +12,15 @@ const Header = () => {
   return (
     <div>
         <div className="navbar">
-
-            <img src={logo_dark} alt="" className='logo'/>
+            <Link to='/'>
+              <img src={logo_dark} alt="" className='logo'/>
+            </Link>
 
             <ul>
+              <Link to='/'>
+                <li> </li>
+              </Link>
+  
                 <Link to='/'>
                   <li>Home</li>
                 </Link>
@@ -30,13 +35,13 @@ const Header = () => {
                 </Link>
             </ul>
 
-            <div className="search-box">
+            {/* <div className="search-box">
 
               <input type="text" name="" id="" placeholder='Search'/> 
               
               <img src={search_icon_dark} alt="" />
 
-            </div>
+            </div> */}
 
             <div className="button">
               <Link to='/login'>

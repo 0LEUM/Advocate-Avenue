@@ -2,8 +2,8 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import l1 from '../../assets/landscape-1.jpg'
-import l2 from '../../assets/landscape-2.jpeg'
-import l3 from '../../assets/landscape-3.jpeg'
+import l2 from '../../assets/landscape-2.png'
+import l3 from '../../assets/landscape-3.jpg'
 import './top.css'
 
 
@@ -46,9 +46,9 @@ const Top = () => {
                     <img src={l1} alt="image" className="card__img"/>
 
                     <div className="card__data">
-                        <span className="card__description">West Bengal, Hooghly</span>
-                        <h2 className="card__title">Advocate 1</h2>
-                        <span className="card__description">⭐ 4.8</span>
+                        <span className="card__description">Suits</span>
+                        <h2 className="card__title">Harvey Specter</h2>
+                        {/* <span className="card__description">⭐ 4.8</span>
                         
                         {/* <span onClick={gfg(1)} className="star">★</span>
                         <span onClick={gfg(2)} className="star">★</span>
@@ -57,7 +57,7 @@ const Top = () => {
                         <span onClick={gfg(5)} className="star">★</span>
                         <h3 id="output">Rating is: 0/5</h3> */}
 
-                        <a href="#" className="card__button">Read More</a>
+                        {/* <a href="#" className="card__button">Read More</a> */}
                     </div>
                     </article>
 
@@ -65,11 +65,11 @@ const Top = () => {
                     <img src={l2} alt="image" className="card__img"/>
 
                     <div className="card__data">
-                        <span className="card__description">West Bengal, Howrah</span>
-                        <h2 className="card__title">Advocate 2
+                        <span className="card__description">Breaking Bad / Better Call Saul</span>
+                        <h2 className="card__title">Saul Goodman 
                         </h2>
-                        <span className="card__description">⭐ 4.8</span>
-                        <a href="#" className="card__button">Read More</a>
+                        {/* <span className="card__description">⭐ 4.8</span>
+                        <a href="#" className="card__button">Read More</a> */}
                     </div>
                     </article>
 
@@ -77,10 +77,10 @@ const Top = () => {
                     <img src={l3} alt="image" className="card__img"/>
 
                     <div className="card__data">
-                        <span className="card__description">West Bengal, North 24 Pargana</span>
-                        <h2 className="card__title">Advocate 3</h2>
-                        <span className="card__description">⭐ 4.8</span>
-                        <a href="#" className="card__button">Read More</a>
+                        <span className="card__description">Suits</span>
+                        <h2 className="card__title">Mike Ross</h2>
+                        {/* <span className="card__description">⭐ 4.8</span>
+                        <a href="#" className="card__button">Read More</a> */}
                     </div>
                     </article>
                 </div>

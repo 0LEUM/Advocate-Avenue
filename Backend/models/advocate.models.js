@@ -36,12 +36,12 @@ const advocateSchema = new Schema({
         required: true,
         trim: true,
     },
-    /*barCouncil: {
+    barCouncil: {
         type: String,
         required: true,
         trim: true,
         // enum: [''],
-    },*/
+    },
     regNo: {
         type: String,
         required: true,
@@ -59,6 +59,11 @@ const advocateSchema = new Schema({
         trim: true,
     },
     district: {
+        type: String,
+        required: true,
+        trim: true,
+    },
+    chamberAddress: {
         type: String,
         required: true,
         trim: true,

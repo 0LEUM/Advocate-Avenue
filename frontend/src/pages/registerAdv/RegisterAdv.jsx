@@ -36,6 +36,7 @@ const Register = () => {
             [e.target.dateOfBirth] : e.target.value,
             [e.target.practicingState] : e.target.value,
             [e.target.district] : e.target.value,
+            [e.target.chamberAddress] : e.target.value,
         })
         console.log(form);
     }
@@ -109,6 +110,11 @@ const Register = () => {
                         <input type="text" name='universityName' placeholder='University Name' onChange={handleForm} required />
                         <FaUniversity className ='icon3'/>
                     </div>
+
+                    <div className="input-box">
+                        <input type="text" name='barCouncil' placeholder='Bar Council Of ____________' onChange={handleForm} required />
+                        {/* <FaUniversity className ='icon3'/> */}
+                    </div>
             
                     {/* <div>
                         <select id="states">
@@ -146,6 +152,11 @@ const Register = () => {
 
                         <input type="text" name='district' placeholder='District' onChange={handleForm} required />
          
+                    </div>
+
+                    <div className="input-box">
+                        <input type="text" name='chamberAddress' placeholder='Address Of Your Chamber' onChange={handleForm} required />
+                        {/* <FaUniversity className ='icon3'/> */}
                     </div>
 
 

@@ -12,27 +12,33 @@ const LawyerSearch = () => {
                     gender: 'Male',
                     state: 'West Bengal',
                     district: 'Hooghly',
-                    rating: '⭐ 4.5',
+                    email: 'animesh@mail.com',
+                    workPhone: '123-456-7890',
+                    chamberAddress: '123, ABC Street, Kolkata',
                     description: 'Experienced criminal lawyer with expertise in handling various criminal cases.',
                     details: 'Animesh Ganguly is a renowned criminal lawyer based in West Bengal. He is a member of the Bar Council of West Bengal and has extensive experience in handling criminal cases of varying complexities.'
                 },
                 { 
                     name: 'Rupsa Chatterjee',
-                    type: 'Divorce',
+                    type: 'Family Law',
                     gender: 'Female',
                     state: 'West Bengal',
                     district: 'Howrah',
-                    rating: '⭐ 4.8',
+                    email: 'rupsa@mail.com',
+                    workPhone: '123-456-7890',
+                    chamberAddress: '123, ABC Street, Kolkata',
                     description: 'Specialized in divorce law, helping clients through difficult times with compassion and expertise.',
                     details: 'John Doe is an expert in divorce law, providing compassionate and expert guidance to clients in California.'
                 },
                 { 
                     name: 'John Doe',
-                    type: 'Property',
+                    type: 'Civil',
                     gender: 'Male',
                     state: 'West Bengal',
                     district: 'North 24 Pargana',
-                    rating: '⭐ 4.2',
+                    email: 'animesh@mail.com',
+                    workPhone: '123-456-7890',
+                    chamberAddress: '123, ABC Street, Kolkata',
                     description: 'Specialized in divorce law, helping clients through difficult times with compassion and expertise.',
                     details: 'John Doe is an expert in divorce law, providing compassionate and expert guidance to clients in California.'
                 },
@@ -50,8 +56,8 @@ const LawyerSearch = () => {
 
     const stateDistricts={
         'West Bengal': ['Howrah','Hooghly','North 24 Pargana'],
-        'Delhi': ['District1','District2'],
-        'Mumbai': ['District3','District4'],
+        'Delhi': ['East-Delhi','South-West'],
+        'Mumbai': ['Thane','Navi Mumbai'],
     };
 
     // Function to handle search
@@ -90,8 +96,9 @@ const LawyerSearch = () => {
                         <option value="" selected>Type of Advocate</option>
                         <option value="">All</option>
                         <option value="Criminal">Criminal</option>
-                        <option value="Divorce">Divorce</option>
-                        <option value="Property">Property</option>
+                        <option value="Corporate">Corporte</option>
+                        <option value="Civil">Civil</option>
+                        <option value="Family Law">Family Law</option>
                     </select>
                     
                     <select id="gender" onChange={(e) => setSelectedGender(e.target.value)}>
@@ -132,8 +139,10 @@ const LawyerSearch = () => {
                                     <p>State: {lawyer.state}</p>
                                     <p>District: {lawyer.district}</p>
                                     <p>Description: {lawyer.description}</p>
-                                    <p>Rating: {lawyer.rating}</p>
-                                    <p className="read-more-link" onClick={() => toggleDetails(index)}>Read more</p>
+                                    <p>Email: {lawyer.email}</p>
+                                    <p>Work Phone Number: {lawyer.workPhone}</p>
+                                    <p> Chamber Address: {lawyer.chamberAddress}</p>
+                                    {/* <p className="read-more-link" onClick={() => toggleDetails(index)}>Read more</p> */}
                                     {lawyer.showDetails && (
                                         <div className="lawyer-details">
                                             <p>{lawyer.details}</p>
@@ -148,6 +157,8 @@ const LawyerSearch = () => {
                 </div>
             </div>
         </div>
+
+
         
     );
 };

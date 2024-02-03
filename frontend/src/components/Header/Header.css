@@ -183,12 +183,38 @@ ul li:hover{
         margin-left: 10px;
     }
 
+    .user-icon {
+        width: 20px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    ul li {
+        font-size: 12px;
+        margin: 3px 0;
+    }
+
+    .toggle-icon {
+        width: 20px;
+        margin-left: 5px;
+    }
+
     .search-box {
         display: none;
     }
 
     .user-icon {
-        width: 20px;
-        margin-left: 10px;
+        width: 15px;
+        margin-left: 5px;
     }
 }
