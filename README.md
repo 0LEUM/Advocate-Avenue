@@ -10,7 +10,10 @@
   # Advocate Avenue
   ## Your path to Legal ease
   
-  <b><a align="center" href="#">Watch Demo Video</a></b>
+  <b><a align="center" href="https://youtu.be/xiYJh3Nue6o">Watch Demo Video</a></b>
+    <video width="320" height="240" controls>
+        <source src="./frontend/src/assets/advocate-avenue.mp4" type="video/mp4">
+    </video>
   <br/>
 
   <p align="center">
