@@ -66,6 +66,8 @@ app.post('/Advocate-Avenue',async (req,res)=>{
     advocate.dateOfBirth = req.body.dateOfBirth;
     advocate.practicingState = req.body.practicingState;
     advocate.district = req.body.district;
+    advocate.chamberAddress=req.body.chamberAddress;
+    advocate.barCouncil=req.body.barCouncil;
 
     const doc = await advocate.save();
 

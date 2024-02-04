@@ -23,25 +23,19 @@ const Register = () => {
 
     const handleForm = (e) => {
         // console.log(e.target.name);
-        setForm({
-            ...form,
-            [e.target.name] : e.target.value,
-            [e.target.phoneNumber] : e.target.value,
-            [e.target.password] : e.target.value,
-            [e.target.firstName] : e.target.value,
-            [e.target.lastName] : e.target.value,
-            [e.target.universityName] : e.target.value,
-            [e.target.barCouncil] : e.target.value,
-            [e.target.regNo] : e.target.value,
-            [e.target.dateOfBirth] : e.target.value,
-            [e.target.practicingState] : e.target.value,
-            [e.target.district] : e.target.value,
-            [e.target.chamberAddress] : e.target.value,
-        })
+        const {name,value}=e.target;
+        setForm(prev=>({
+            ...prev,
+            
+                [name]:value
+            
+        }
+            ));
         console.log(form);
     }
 
     const handleSubmit = async (e) => {
+        console.log(form);
         e.preventDefault();
         const response = await fetch('http://localhost:8000/Advocate-Avenue',{
             method:'POST',
