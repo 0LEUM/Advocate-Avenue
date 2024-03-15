@@ -276,6 +276,8 @@ Distributed under the MIT License
 <!-- ACKNOWLEDGMENTS -->
 ## Contributors
 
+[![Contributors](https://contrib.rocks/image?repo=0LEUM/Advocate-Avenue)](https://github.com/0LEUM/Advocate-Avenue/graphs/contributors)
+
 <br>
 <div>
 <h1 align="center">
